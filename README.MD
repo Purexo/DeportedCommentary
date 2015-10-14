@@ -24,7 +24,7 @@ De plus créer mon propre programme me permet d'en faire ce que je veux, et le r
 ```
 git clone 'https://github.com/purexo/DeportedCommentary.git'
 cd DeportedCommentary
-pip -r requirements.txt
+pip install -r requirements.txt
 cp config.example.json config.json
 ```
 
