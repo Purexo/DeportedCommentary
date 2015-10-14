@@ -1,0 +1,11 @@
+{
+	"host": "localhost",
+	"port": 8080,
+	"sitename": "Your Name Site",
+	"pageadmin": "/admin",
+	"theme": "default",
+	"Allow-Origin": [
+		"*"
+	],
+	"akismet-key": "xxxxxxxxxx"
+}

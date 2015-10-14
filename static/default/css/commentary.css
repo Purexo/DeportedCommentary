@@ -1,0 +1,148 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'RobotoMedium';
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/Roboto-Medium.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'RobotoLightItalic';
+  font-style: italic;
+  font-weight: 300;
+  src: url(../fonts/Roboto-LightItalic.woff2) format('woff2');
+}
+code { white-space: pre; }
+pre { white-space: pre; }
+#Commentary {
+	width: 100%
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+	flex-direction: column;
+	background: #FFF;
+	font-family: 'Roboto', sans-serif;
+}
+#Commentary textarea, #Commentary input {
+	font-family: 'Roboto', sans-serif;
+}
+
+#Commentary #formCommentary {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	min-width: 600px;
+	margin: auto;
+	margin-top: 10px;
+	padding: 10px;
+	background: #FFF;
+	box-shadow: 0px 0px 5px 5px #EEE;
+}
+
+#Commentary #formCommentary h4 {
+    margin: 0px 0px 5px;
+    font-family: "Roboto";
+    text-shadow: 0px 0px 2px #EEE;
+}
+#Commentary #formCommentary ::-webkit-input-placeholder {
+    font-family: "RobotoLightItalic";
+}
+#Commentary #formCommentary ::-moz-placeholder {
+    font-family: "RobotoLightItalic";
+}
+#Commentary #formCommentary :-ms-input-placeholder {
+    font-family: "RobotoLightItalic";
+}
+#Commentary #formCommentary :-moz-placeholder {
+    font-family: "RobotoLightItalic";
+}
+
+#Commentary #headerCommentary input[type="email"] {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+#Commentary #formCommentary input, #formCommentary textarea {
+	border: none;
+	border-bottom: 1px solid #EEE;
+}
+
+#Commentary #formCommentary #headerCommentary {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+#Commentary #headerCommentary input {
+	flex-grow: 1;
+}
+
+#Commentary #formCommentary textarea {
+	min-width: 600px;
+	min-height: 150px;
+}
+#Commentary .fa-1_5x {
+    font-size: 1.5em;
+}
+#Commentary #formCommentary button[type="submit"] {
+	position: absolute;
+	bottom: 32px;
+	right: 32px;
+	height: 52px;
+	width: 52px;
+	border-radius: 32px;
+	border: 1px #2488E0;
+	background: #0074D9;
+	color: #FFF;
+	box-shadow: 0px 0px 5px 5px #EEE;
+	padding: 0px;
+}
+
+#Commentary #formCommentary button[type="submit"] i {
+	margin-left: -2px;
+	margin-top: -2px;
+}
+
+#Commentary #CommentaryList {
+	display: flex;
+	flex-direction: column;
+}
+
+#Commentary #CommentaryList .Commentary {
+	display: flex;
+	flex-direction: column;
+	width: 600px;
+	margin: auto;
+	margin-top: 20px;
+	padding: 10px;
+	background: #FFF;
+	box-shadow: 0px 0px 5px 5px #EEE;
+}
+
+#Commentary #CommentaryList .Commentary .headerCommentary {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border: none;
+	border-bottom: 1px solid #EEE;
+}
+#Commentary #CommentaryList .Commentary .headerCommentary a,
+#Commentary #CommentaryList .Commentary .headerCommentary div {
+	text-decoration: none;
+	color: #0074D9
+}
+#Commentary .content {
+	color: #696969;
+}
+#Commentary .content hr {
+	height: 1px;
+	border: 0;
+	background: #CCC;
+	background-image: linear-gradient(to right, #EEE, #CCC, #EEE);
+	width: 70%;
+}
