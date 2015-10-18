@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="{{host}}/static/awesome-font/css/font-awesome.min.css">
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+<!-- --> <link rel="stylesheet" href="{{host}}/static/awesome-font/css/font-awesome.min.css"> <!--  -->
+<!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
 
 <link rel="stylesheet" type="text/css" href="{{host}}/static/css/commentary.css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />

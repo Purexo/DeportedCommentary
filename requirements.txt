@@ -2,3 +2,4 @@ bottle==0.12.8
 Markdown==2.6.2
 peewee==2.6.4
 requests==2.7.0
+validate-email==1.3

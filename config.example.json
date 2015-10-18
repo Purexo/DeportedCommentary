@@ -1,11 +1,13 @@
 {
-	"host": "localhost",
-	"port": 8080,
 	"sitename": "Your Name Site",
 	"pageadmin": "/admin",
 	"theme": "default",
+	"akismet-key": "xxxxxxxxxx",
 	"Allow-Origin": [
 		"*"
 	],
-	"akismet-key": "xxxxxxxxxx"
+	
+	"__comments": "This is for server test, not deployement",
+	"host": "localhost",
+	"port": 8080
 }

@@ -17,6 +17,7 @@ De plus créer mon propre programme me permet d'en faire ce que je veux, et le r
 # Prérequis
  - Python 3.5 >=
  - pip
+ - virtualenv (pip install virtualenv)
  - avoir un site sur lequel intégrer le programme :3
  - le reste pip s'en occupera
 
@@ -24,6 +25,8 @@ De plus créer mon propre programme me permet d'en faire ce que je veux, et le r
 ```
 git clone 'https://github.com/purexo/DeportedCommentary.git'
 cd DeportedCommentary
+virtualenv ENV
+source ENV/bin/activate
 pip install -r requirements.txt
 cp config.example.json config.json
 ```
@@ -49,9 +52,15 @@ cp config.example.json config.json
   - /!\ le path dans l'url ferra correspondre '/static/votrefichier' au chemin 'static/votretheme/votrefichier'
   - personnalisez le
   - éditez le fichier de config pour le faire correspondre à votre theme (juste le nom du dossier, pas de chemin.)
+  
+[More details here](Documentation/Theming/README.MD).
  
-# Lancement
+# Lancement (test only)
 ```python(3?) main.py```
+
+# Deployement
+ - in [Apache](Documentation/Deployement/Apache/README.MD)
+ - in [Nginx](Documentation/Deployement/Nginx/README.MD)
 
 ## Intégration
 vous récupererez le code en vous connectant à la page d'acceuil de votre programme python via l'exterieur.

@@ -1,7 +1,6 @@
 from bottle import Bottle, view, static_file, request, html_escape, redirect, response
 from urllib.parse import urlparse
-import database
-import setmimetypes
+from src import database, setmimetypes; setmimetypes
 
 import json
 with open('config.json') as json_data:
@@ -12,7 +11,7 @@ theme = config['theme'] or 'default'
 
 def set_headers():
     """
-        Applique les ces headers  aux pages qui en ont besoin
+        Applique les headers aux pages qui en ont besoin
     """
     
     for url in config["Allow-Origin"]:
@@ -42,12 +41,12 @@ def server_index():
 def server_static(filepath):
     """ Sert les fichiers statiques tel que .js, .css, .jpeg, etc... """
     return static_file(filepath, root='static/%s/' % theme)
-
+ 
 @app.get('/list')
 @view('view/%s/commentary.tpl' % theme)
 def server_list_commentary():
     """
-        Renvois la liste des commentaires lie a la page du Referer
+        Renvois la liste des commentaires lié a la page du Referer
     """
     
     set_headers()
@@ -78,7 +77,7 @@ def server_add_commentary():
     referer = request.headers.get('Referer') or '/localhost/'
     url = urlparse(referer)
     
-    from akismet import Akismet
+    from src.akismet import Akismet
     api = Akismet(key=config['akismet-key'] or '', blog_url=referer)
     data = {
         'user_ip': request.remote_addr,
